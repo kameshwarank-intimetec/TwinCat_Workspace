@@ -3,6 +3,25 @@
 	<Project ProjectGUID="{216952A2-D0C4-470B-A788-E00E49C063F9}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
 			<Settings MaxCpus="8" NonWinCpus="1"/>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+			</Tasks>
 		</System>
+		<Plc>
+			<Project GUID="{2944FB4E-A581-4EEE-BFBE-57928F99C454}" Name="Assignment_week1" PrjFilePath="Assignment_week1\Assignment_week1.plcproj" TmcFilePath="Assignment_week1\Assignment_week1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>Assignment_week1 Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>1</Id>
+							<Name>Default</Name>
+						</Context>
+					</Contexts>
+				</Instance>
+			</Project>
+		</Plc>
 	</Project>
 </TcSmProject>
