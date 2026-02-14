@@ -2,7 +2,10 @@
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.71">
 	<Project ProjectGUID="{216952A2-D0C4-470B-A788-E00E49C063F9}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
-			<Settings MaxCpus="8" NonWinCpus="1"/>
+			<Settings MaxCpus="8" NonWinCpus="1">
+				<Cpu/>
+				<Cpu CpuId="7"/>
+			</Settings>
 			<Tasks>
 				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
