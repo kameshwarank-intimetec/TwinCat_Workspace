@@ -9,19 +9,5 @@
 				</Task>
 			</Tasks>
 		</System>
-		<Plc>
-			<Project GUID="{0D3CD7B1-88CB-463D-A176-BAC05EAE3B40}" Name="practice_week1" PrjFilePath="practice_week1\practice_week1.plcproj" TmcFilePath="practice_week1\practice_week1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
-					<Name>practice_week1 Instance</Name>
-					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Contexts>
-						<Context>
-							<Id>1</Id>
-							<Name>Default</Name>
-						</Context>
-					</Contexts>
-				</Instance>
-			</Project>
-		</Plc>
 	</Project>
 </TcSmProject>
