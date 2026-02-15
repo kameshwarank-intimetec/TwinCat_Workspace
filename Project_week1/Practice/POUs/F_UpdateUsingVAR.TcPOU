@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
+  <POU Name="F_UpdateUsingVAR" Id="{8da0a965-50a0-413d-ac37-631c411fc1d5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION F_UpdateUsingVAR : BOOL
+VAR_IN_OUT
+	nNumber1 : DINT;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[nNumber1 := nNumber1 + 1;]]></ST>
+    </Implementation>
+    <LineIds Name="F_UpdateUsingVAR">
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

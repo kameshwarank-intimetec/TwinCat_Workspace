@@ -27,7 +27,7 @@ bFlag := TRUE;
 nProd := F_Multiply(123,432);
 bIsPrime := F_PrimeCheck(nInputNum := 17 );
 
-F_InitializeStudentDetails(stStudentReference1, 'Kamesh', 101 , 21);
+F_InitializeStudentDetails(stStudentReference1, 'Kamesh', 1 , 21);
 
 F_Loops(10,nResult1 => nResultFromLoop1, nResult2 => nResultFromLoop2, nResult3 => nResultFromLoop3);
 

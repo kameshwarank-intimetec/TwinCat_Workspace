@@ -3,21 +3,20 @@
 	<Project ProjectGUID="{1EB195BF-5DCE-42D9-B07F-AB76E53DF90C}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
 			<Settings MaxCpus="8" NonWinCpus="1">
-				<Cpu/>
 				<Cpu CpuId="7"/>
 			</Settings>
 			<Tasks>
-				<Task Id="3" Priority="1" CycleTime="100000" AmsPort="350" AdtTasks="true">
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
 					<Name>PlcTask</Name>
 				</Task>
-				<Task Id="4" Priority="20" CycleTime="100000" AmsPort="351" AdtTasks="true">
-					<Name>PlcTask_1</Name>
+				<Task Id="5" Priority="21" CycleTime="100000" AmsPort="352" AdtTasks="true">
+					<Name>PlcTask1</Name>
 				</Task>
 			</Tasks>
 		</System>
 		<Plc>
 			<Project GUID="{E73730EF-F48B-4DA1-A099-17781B95F909}" Name="HelloWorld" PrjFilePath="HelloWorld\HelloWorld.plcproj" TmcFilePath="HelloWorld\HelloWorld.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="HelloWorld\HelloWorld.tmc" TmcHash="{1EB69692-3D0E-76A1-D35D-16C5D1AB2612}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="HelloWorld\HelloWorld.tmc" TmcHash="{5EA50C96-75FA-621B-8799-9F63678DE486}">
 					<Name>HelloWorld Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
@@ -27,22 +26,32 @@
 							<ManualConfig>
 								<OTCID>#x02010030</OTCID>
 							</ManualConfig>
-							<Priority>1</Priority>
-							<CycleTime>10000000</CycleTime>
-						</Context>
-						<Context>
-							<Id>1</Id>
-							<Name>PlcTask_1</Name>
-							<ManualConfig>
-								<OTCID>#x02010040</OTCID>
-							</ManualConfig>
 							<Priority>20</Priority>
 							<CycleTime>10000000</CycleTime>
 						</Context>
 					</Contexts>
 					<TaskPouOids>
-						<TaskPouOid Prio="1" OTCID="#x08502002"/>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
+					</TaskPouOids>
+				</Instance>
+			</Project>
+			<Project GUID="{762D7B56-F884-414E-8C87-834C7756E61D}" Name="Practice" PrjFilePath="Practice\Practice.plcproj" TmcFilePath="Practice\Practice.tmc" ReloadTmc="true" AmsPort="852" FileArchiveSettings="#x000e" SymbolicMapping="true">
+				<Instance Id="#x08502040" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{E84CADEB-2902-57EA-F262-23E20E4A067E}">
+					<Name>Practice Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+					<Contexts>
+						<Context>
+							<Id>0</Id>
+							<Name>PlcTask</Name>
+							<ManualConfig>
+								<OTCID>#x02010050</OTCID>
+							</ManualConfig>
+							<Priority>21</Priority>
+							<CycleTime>10000000</CycleTime>
+						</Context>
+					</Contexts>
+					<TaskPouOids>
+						<TaskPouOid Prio="21" OTCID="#x08502041"/>
 					</TaskPouOids>
 				</Instance>
 			</Project>

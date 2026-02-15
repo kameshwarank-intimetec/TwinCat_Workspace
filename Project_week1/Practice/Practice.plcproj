@@ -3,69 +3,34 @@
   <PropertyGroup>
     <FileVersion>1.0.0.0</FileVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{e73730ef-f48b-4da1-a099-17781b95f909}</ProjectGuid>
+    <ProjectGuid>{762d7b56-f884-414e-8c87-834c7756e61d}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
     <DownloadApplicationInfo>true</DownloadApplicationInfo>
     <WriteProductVersion>true</WriteProductVersion>
     <GenerateTpy>false</GenerateTpy>
-    <Name>HelloWorld</Name>
+    <Name>Practice</Name>
     <ProgramVersion>3.1.4024.0</ProgramVersion>
-    <Application>{44e6a34a-1429-4830-9f5c-4090caa90921}</Application>
-    <TypeSystem>{26173a3f-e97b-43b0-8a99-5c53d23fb509}</TypeSystem>
-    <Implicit_Task_Info>{4417c53a-6577-4824-a158-622972464aef}</Implicit_Task_Info>
-    <Implicit_KindOfTask>{8aa78c3d-c788-4c9a-baf3-ea27e628d59f}</Implicit_KindOfTask>
-    <Implicit_Jitter_Distribution>{f27fef85-7246-46f9-9a29-070fdde24139}</Implicit_Jitter_Distribution>
-    <LibraryReferences>{e959dba1-db0f-48a6-b7bb-db29246d9058}</LibraryReferences>
-    <Released>false</Released>
+    <Application>{aaf02ca5-42e8-442b-9d6d-8be527d5d08c}</Application>
+    <TypeSystem>{9cd39d7d-0040-4fd9-a0f1-4efdb47a7da3}</TypeSystem>
+    <Implicit_Task_Info>{1a9edd66-25d8-44ad-b542-50ddc28a5ec9}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{681ac47e-f057-4201-ad18-aa0332c2a870}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{84229274-0d50-470c-87db-e5ca00abd2b3}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{b755aaa7-b383-4cf8-a56f-35beb4558b27}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DUTs\E_Color.TcDUT">
+    <Compile Include="DUTs\ST_SampleValue.TcDUT">
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\E_Event.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\ST_Event.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\ST_Student.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="GVLs\Nums.TcGVL">
-      <SubType>Code</SubType>
-      <LinkAlways>true</LinkAlways>
     </Compile>
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Celcius_Fahrenheit.TcPOU">
+    <Compile Include="POUs\F_UpdateUsingVAR.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\F_Add.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\F_InitializeStudentDetails.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\F_Loops.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\F_Multiply.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\F_PrimeCheck.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\F_UpdateTimeWithSystemTime.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\F_HelloWorld.TcPOU">
+    <Compile Include="POUs\F_UpdateValue.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POUs\My_Program.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -84,30 +49,40 @@
       <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_System</Namespace>
     </PlaceholderReference>
-    <PlaceholderReference Include="Tc2_Utilities">
-      <DefaultResolution>Tc2_Utilities, * (Beckhoff Automation GmbH)</DefaultResolution>
-    </PlaceholderReference>
     <PlaceholderReference Include="Tc3_Module">
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="HelloWorld.tmc">
+    <None Include="Practice.tmc">
       <SubType>Content</SubType>
     </None>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-        <Data>
-          <o xml:space="preserve" t="OptionKey">
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
         <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
         <o>
           <v n="Name">"{192FAD59-8248-4824-A8DE-9177C94C195A}"</v>
           <d n="SubKeys" t="Hashtable" />
+          <d n="Values" t="Hashtable" />
+        </o>
+        <v>{29BD8D0C-3586-4548-BB48-497B9A01693F}</v>
+        <o>
+          <v n="Name">"{29BD8D0C-3586-4548-BB48-497B9A01693F}"</v>
+          <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
+            <v>Rules</v>
+            <o>
+              <v n="Name">"Rules"</v>
+              <d n="SubKeys" t="Hashtable" />
+              <d n="Values" t="Hashtable" />
+            </o>
+          </d>
           <d n="Values" t="Hashtable" />
         </o>
         <v>{8F99A816-E488-41E4-9FA3-846536012284}</v>
@@ -128,13 +103,13 @@
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-        </Data>
-        <TypeList>
-          <Type n="Hashtable">System.Collections.Hashtable</Type>
-          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-          <Type n="String">System.String</Type>
-        </TypeList>
-      </XmlArchive>
+  </Data>
+  <TypeList>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>

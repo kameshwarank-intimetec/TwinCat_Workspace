@@ -14,7 +14,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[stStudent1.sStudentName := stName;
 stStudent1.nStudentAge := stAge;
-stStudent1.nStudentId := stId;
+stStudent1.nStudentId := stStudent1.nStudentId + stId;
 ]]></ST>
     </Implementation>
     <LineIds Name="F_InitializeStudentDetails">

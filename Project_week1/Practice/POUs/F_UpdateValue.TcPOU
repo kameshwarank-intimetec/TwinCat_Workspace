@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.16">
+  <POU Name="F_UpdateValue" Id="{4aa8a255-252e-4f00-bdc3-1baf10f181a3}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION F_UpdateValue
+VAR_INPUT
+	stValueStructure : REFERENCE TO ST_SampleValue;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[stValueStructure.nNumber := stValueStructure.nNumber + 1;]]></ST>
+    </Implementation>
+    <LineIds Name="F_UpdateValue">
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
