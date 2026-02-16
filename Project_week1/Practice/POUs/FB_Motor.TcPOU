@@ -3,6 +3,7 @@
   <POU Name="FB_Motor" Id="{c81c8553-f5f9-451e-989a-9ec816095b07}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_Motor
 VAR_INPUT
+	nSpeed : INT ;
 END_VAR
 VAR_OUTPUT
 END_VAR
@@ -11,7 +12,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[nSpeed := nSpeed + 1;]]></ST>
     </Implementation>
     <LineIds Name="FB_Motor">
       <LineId Id="9" Count="0" />

@@ -6,6 +6,7 @@ VAR
 	stStructure : ST_SampleValue;
 	bFlag : BOOL := FALSE;
 	nNum : DINT := 0;
+	fbMotor : FB_Motor;
 END_VAR
 ]]></Declaration>
     <Implementation>
